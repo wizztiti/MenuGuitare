@@ -1,0 +1,124 @@
+.breadcrumb {
+    clear:both;
+    padding: 0px;
+    margin-bottom: 1px;
+}
+
+.breadcrumb ol {
+    margin-bottom: 0;
+}
+.breadcrumb a {
+    background-color: #588baf;
+    color : #FFF;
+    padding: 5px 10px;
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*
+.breadcrumb ol a::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #588baf;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    z-index: 2;
+}
+
+.breadcrumb ol a:before {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid white;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 1;
+}
+*/
+/* Espacement entre les flèches */
+.breadcrumb a,
+.breadcrumb a:before {
+    margin-left: 2px;
+}
+
+.breadcrumb a:hover {
+    background-color: #3c7186;
+}
+.breadcrumb a:hover:after {
+    border-left-color: #3c7186 !important;
+}
+
+.breadcrumb li:first-child a{
+	border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-left: 0;
+    padding-left: 15px;
+}
+
+
+
+.breadcrumb li {
+    position: relative;
+    float: left;
+    margin-left: 0px;
+}
+
+.breadcrumb ul li {
+    display: initial;
+}
+
+.breadcrumb ul a {
+    border-top: 1px solid white;
+}
+
+.small-arrow-down-bl {
+    margin-left: 5px;
+    display: inline-block;
+    height: 5px;
+    width: 11px;
+    background: url("/img/charte/sprite2.png") no-repeat -599px -100px;
+}
+
+
+.breadcrumb .dropDown {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 29px;
+    left: 1px;
+}
+
+.breadcrumb .dropDown a:before,
+.breadcrumb .dropDown a:after {
+    content: initial;
+}
+
+.breadcrumb .dropDown li {
+    float: none;
+}
+.breadcrumb .dropDown li a {
+    border-top-left-radius: initial;
+    border-bottom-left-radius: initial;
+    margin-left: 2px;
+    padding-left: 0 !important;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+.breadcrumb .dropDown a {
+    font-weight: normal;
+    width: 100%;
+}
+
