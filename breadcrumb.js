@@ -9,7 +9,7 @@ var breadcrumb = {
  		$(".breadcrumb li:last-child").mouseenter( function(){
 	      $(".breadcrumb .dropDown").show();
 	    }).mouseleave(function(){
-	      $(".breadcrumb .dropDown").hide();
+	      //$(".breadcrumb .dropDown").hide();
 	    });
 	}
 };
