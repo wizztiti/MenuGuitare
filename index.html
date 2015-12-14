@@ -213,9 +213,11 @@ $(document).ready(function() {
                 <ol>
                     <li><a href="/" itemprop="url"><span itemprop="title">Guitariste.com</span></a></li>
                     <li><a href="/articles/" itemprop="url"><span itemprop="title">Articles</span></a></li>
-                    <li><a href="/articles/guitare,1.html" itemprop="url"><span itemprop="title">Mesa Boogie Mark Five : 35</span></a></li>
-                    <li><a href="/articles/guitare,1.html" itemprop="url"><span itemprop="title">Mesa Boogie Mark Five : 35</span></a></li>
-                    <li><a href="/articles/guitare,1.html" itemprop="url"><span itemprop="title">Boogie</span><span class="small-arrow-down-bl"></span></a>
+                    <li class="with-menu">
+                        <a href="/articles/guitare,1.html" itemprop="url">
+                            <span itemprop="title">Boogie</span>
+                            <span class="arrow"></span>
+                        </a>
                         <div class="dropDown">
                             <ul>
                                 <li><a href="#">Sous-Menu numero 1</a></li>
@@ -226,10 +228,19 @@ $(document).ready(function() {
                             </ul>
                         </div>
                     </li>
+                    <li class="page-title">
+                        <span>Mesa Boogie Mark Five : 35</span>
+                    </li>
                 </ol>
             </div>
             <div class="clear"></div>
         </div>
+
+        <!--          SCRIPT POUR MENU BREADCRUMB          -->
+        <script type="text/javascript" src="breadcrumb.js"></script>
+        <script>
+            breadcrumb.init();
+        </script>
 
     <!-- CONTENU -->
     <div class="grid_14 omega">
@@ -713,11 +724,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1412073701879-2');
 </div>
 <script type="text/javascript" src="./index_files/apps.min.js"></script>
 
-<!--          SCRIPT POUR MENU BREADCRUMB          -->
-<script type="text/javascript" src="breadcrumb.js"></script>
-<script>
-    breadcrumb.init();
-</script>
+
 
 <!-- **********************************************-->
 
