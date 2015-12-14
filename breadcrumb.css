@@ -7,6 +7,8 @@
 .breadcrumb ol {
     margin-bottom: 0;
 }
+
+.breadcrumb .page-title,
 .breadcrumb a {
     background-color: #588baf;
     color : #FFF;
@@ -18,7 +20,8 @@
     text-decoration: none;
     font-weight: bold;
 }
-/*
+
+.breadcrumb .page-title::after,
 .breadcrumb ol a::after {
     content: " ";
     display: block;
@@ -33,7 +36,8 @@
     z-index: 2;
 }
 
-.breadcrumb ol a:before {
+.breadcrumb .page-title::before,
+.breadcrumb ol a::before {
 	content: " ";
 	display: block;
 	width: 0;
@@ -46,7 +50,15 @@
 	left: 100%;
 	z-index: 1;
 }
-*/
+
+.breadcrumb .page-title {
+    background-color: #235d86;
+}
+
+.breadcrumb .page-title::after {
+    border-left: 15px solid #235d86;
+}
+
 /* Espacement entre les flèches */
 .breadcrumb a,
 .breadcrumb a:before {
@@ -60,14 +72,20 @@
     border-left-color: #3c7186 !important;
 }
 
+.breadcrumb a .arrow {
+    margin-left: 5px;
+    display: inline-block;
+    height: 5px;
+    width: 11px;
+    background: url("img/charte/sprite2.png") no-repeat -610px -100px;
+}
+
 .breadcrumb li:first-child a{
 	border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     margin-left: 0;
     padding-left: 15px;
 }
-
-
 
 .breadcrumb li {
     position: relative;
@@ -82,15 +100,6 @@
 .breadcrumb ul a {
     border-top: 1px solid white;
 }
-
-.small-arrow-down-bl {
-    margin-left: 5px;
-    display: inline-block;
-    height: 5px;
-    width: 11px;
-    background: url("/img/charte/sprite2.png") no-repeat -599px -100px;
-}
-
 
 .breadcrumb .dropDown {
     display: none;
@@ -108,17 +117,18 @@
 .breadcrumb .dropDown li {
     float: none;
 }
+
 .breadcrumb .dropDown li a {
     border-top-left-radius: initial;
     border-bottom-left-radius: initial;
+    border: none;
     margin-left: 2px;
-    padding-left: 0 !important;
-    padding-top: 4px;
-    padding-bottom: 3px;
+    padding: 5px 10px;
+    fonts-size: 11px;
+    line-height: 16px;
 }
 
 .breadcrumb .dropDown a {
     font-weight: normal;
     width: 100%;
 }
-
