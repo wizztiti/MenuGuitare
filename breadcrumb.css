@@ -4,12 +4,12 @@
     margin-bottom: 1px;
 }
 
-.breadcrumb ol {
-    margin-bottom: 0;
+.breadcrumb ol, ul {
+    margin-bottom: 2px;
 }
 
 .breadcrumb .page-title,
-.breadcrumb a {
+.breadcrumb .menu a {
     background-color: #588baf;
     color : #FFF;
     padding: 5px 10px;
@@ -65,10 +65,10 @@
     margin-left: 2px;
 }
 
-.breadcrumb a:hover {
+.breadcrumb .PrincipalMenu a:hover {
     background-color: #3c7186;
 }
-.breadcrumb a:hover:after {
+.breadcrumb .PrincipalMenu a:hover:after {
     border-left-color: #3c7186 !important;
 }
 
@@ -77,7 +77,14 @@
     display: inline-block;
     height: 5px;
     width: 11px;
+}
+
+.breadcrumb a .arrow.white {
     background: url("img/charte/sprite2.png") no-repeat -610px -100px;
+}
+
+.breadcrumb a .arrow.black {
+    background: url("img/charte/sprite2.png") no-repeat -599px -100px;
 }
 
 .breadcrumb li:first-child a{
@@ -132,3 +139,32 @@
     font-weight: normal;
     width: 100%;
 }
+
+.breadcrumb #rightMenu {
+    position: relative;
+    float: right;
+    width: 100px;
+}
+
+.breadcrumb #rightMenu a:first-child{
+    float: right; 
+    margin-right: 5px;
+}
+
+.breadcrumb #rightMenu a{
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 27px;
+}
+
+.breadcrumb #rightMenu .dropDown {
+    background-color: #DDD;
+    top: 27px
+}
+
+.breadcrumb #rightMenu .dropDown li a {
+    fonts-size: 11px;
+    line-height: 12px;
+    float: none;
+    margin-right: 0;

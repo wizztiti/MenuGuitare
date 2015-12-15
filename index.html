@@ -210,13 +210,13 @@ $(document).ready(function() {
 
         <div class="breadcrumb">
             <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                <ol>
+                <ol class="menu">
                     <li><a href="/" itemprop="url"><span itemprop="title">Guitariste.com</span></a></li>
                     <li><a href="/articles/" itemprop="url"><span itemprop="title">Articles</span></a></li>
-                    <li class="with-menu">
+                    <li class="with-menu" id="principalMenu">
                         <a href="/articles/guitare,1.html" itemprop="url">
                             <span itemprop="title">Boogie</span>
-                            <span class="arrow"></span>
+                            <span class="arrow white"></span>
                         </a>
                         <div class="dropDown">
                             <ul>
@@ -233,10 +233,24 @@ $(document).ready(function() {
                     </li>
                 </ol>
             </div>
+            <div class="with-menu" id="rightMenu">
+                <a href="#" onclick="return false;">Outils
+                <span class="arrow black"></span></a>
+                <div class="dropDown">
+                    <ul>
+                        <li><a href="#">Sous-Menu numero 1</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 1</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="clear"></div>
         </div>
 
         <!--          SCRIPT POUR MENU BREADCRUMB          -->
+        <script type="text/javascript" src="AP.js"></script>
         <script type="text/javascript" src="breadcrumb.js"></script>
         <script>
             breadcrumb.init();

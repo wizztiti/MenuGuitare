@@ -1,19 +1,18 @@
 var breadcrumb = {
 	init: function () {
-
-		var widthMenu = $(".breadcrumb .with-menu").width() - 22;
-		var widthLink = $(".breadcrumb .dropDown a").width();
-
-		var decalageMenu = widthLink - widthMenu;
-		$(".breadcrumb .dropDown a").css({
-			"min-width": widthMenu + "px"
-		});
-		//$(".breadcrumb .dropDown").css({left : decalageMenu});
+		$(".dropDown").fadeOut();
+		$(".dropDown").css({opacity:1});
 
  		$(".breadcrumb .with-menu").mouseenter( function(){
-	      $(".breadcrumb .dropDown").show();
+ 			var elem = "#" + $(this).attr('id');
+ 			var widthMenu = $(elem).width() - 22;
+ 			$(".breadcrumb .dropDown a").css({
+				"min-width": widthMenu + "px"
+			});
+			$(elem + " .dropDown").fadeIn(300);
 	    }).mouseleave(function(){
-	      //$(".breadcrumb .dropDown").hide();
+	    	var elem = "#" + $(this).attr('id');
+			$(elem + " .dropDown").fadeOut(300);
 	    });
 	}
 };
