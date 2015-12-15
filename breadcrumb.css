@@ -111,6 +111,7 @@
 .breadcrumb .dropDown {
     display: none;
     position: absolute;
+    border-top: 1px solid white;
     z-index: 9999;
     top: 29px;
     left: 1px;
@@ -155,12 +156,11 @@
     color: #333;
     display: inline-block;
     font-size: 12px;
-    line-height: 27px;
+    line-height: 29px;
 }
 
 .breadcrumb #rightMenu .dropDown {
     background-color: #DDD;
-    top: 27px
 }
 
 .breadcrumb #rightMenu .dropDown li a {
